@@ -1,4 +1,4 @@
-Forms and inputs are liaisons between a user and a web app. Inputs exist to allow users to enter information and can be used in infinite ways.2
+Forms and inputs are liaisons between a user and a web app. Inputs exist to allow users to enter information and can be used in infinite ways.
 
 For this project, you will create distinct forms that include inputs and a “submit” button. The forms you will create and their specifics are listed below:
 
