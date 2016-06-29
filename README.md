@@ -2,7 +2,7 @@ Forms and inputs are liaisons between a user and a web app. Inputs exist to allo
 
 For this project, you will create distinct forms that include inputs and a “submit” button. The forms you will create and their specifics are listed below:
 
-1. A Signup Form containing a label and input for:
+1. A [Signup Form](signup-form/signup-form.html) containing a label and input for:
 
 	- The user’s first name
 	- The user’s last name
