@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+
+* {
+    box-sizing: border-box;
+}
+
+.questionnaire {
+    background: #0a150e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #0b0b0b;
+}
+
+
+.questionnaire form {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 1em 2em;
+    width: 440px;
+    height: 370px;
+    border: 1px solid #393032;
+    border-radius: 8px;
+    background: linear-gradient(#878787, #cccccc);
+    box-shadow: 1px 2px 5px #cccccc;
+    font-family: 'Cardo', serif;
+    font-size: 16px;
+
+}
+
+.questionnaire-item {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.questionnaire-item label {
+    padding-left: .4em;
+    vertical-align: middle;
+}
+
+.questionnaire input[type="radio"]:selection {
+
+}
+
+.button {
+    display: inline-block;
+    position:relative;
+    padding: 5px 10px 6px;
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+    line-height: 1em;
+    font-size: 1.2em;
+    color: rgba(57, 48, 50, 0.9);
+    box-shadow: 0 1px 3px rgba(57, 48, 50, 0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
+    margin-top: 1em;
+    font-family: 'Cardo', serif;
+
+}
+
+.button:hover {
+    background-color: rgba(242, 242, 242, 0.9);
+}
+
+.button:active {
+    top: 1px;
+}

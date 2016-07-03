@@ -8,29 +8,6 @@
     width: 100%;
 }
 
-.search-form:before,
-.search-form:after {
-    content: '';
-    display: block;
-    height: 1px;
-    left: 50%;
-    margin: 0 0 0 -400px;
-    position: absolute;
-    width: 800px;
-}
-
-.search-form:before {
-    background: #444;
-    background: linear-gradient(left, #151515, #444, #151515);
-    top: 192px;
-}
-
-.search-form:after {
-    background: #000;
-    background: linear-gradient(left, #151515, #000, #151515);
-    top: 191px;
-}
-
 .search-form form {
     background: #111;
     background: linear-gradient(#1b1b1b, #111);
