@@ -19,12 +19,12 @@ For this project, you will create distinct forms that include inputs and a “su
 	- A dropdown (select input) containing at least 6 options representing categories
 	- And a submit button, with the text “Search”
 
-3. A questionnaire containing a label and input for
+3. A [questionnaire](questionnaire/questionnaire.html) containing a label and input for
 
 	- 4 or more Radio buttons each with dinstinctive text. Some ideas would be 4 distinct ice cream flavors, the best restaurants in your town, or the best
 	- An “other” radio input, accompanied by a text input for the user to enter their own answer
 
-4. A login form of your own creation containing at least 3 distinct input types. Look around the web for inspiration.
+4. A [login form](login-form/login-form.html) of your own creation containing at least 3 distinct input types. Look around the web for inspiration.
 
 5. A color building form composed of:
 
@@ -59,7 +59,7 @@ For this project, you will create distinct forms that include inputs and a “su
 	- A dropdown representing the card’s expiration month.
 	- A dropdown representing the card’s expiration year. Start at the current year and add an option for up to 15 years from the current year.
 
-##Requirements:
+## Requirements:
 
 - Create each form in its own HTML document
 - Use an external stylesheet. Do not use inline CSS
