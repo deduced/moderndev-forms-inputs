@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Building Form</title>
+    <link rel="stylesheet" href="color-building-form.css">
+</head>
+<body>
+    <section class="color-slider">
+        <h2>Color Builder</h2>
+        <div>
+            <label for="color-slider-red">Red</label>
+            <input type="range" id="color-slider-red" min="0" max="255" step="5" list="red-ticks">
+        </div>
+
+        <div>
+            <label for="color-slider-green">Green</label>
+            <input type="range" id="color-slider-green" min="0" max="255" step="5" list="green-ticks">
+        </div>
+
+        <div>
+            <label for="color-slider-blue">Blue</label>
+            <input type="range" id="color-slider-blue" min="0" max="255" step="5" list="blue-ticks">
+        </div>
+
+        <div>
+            <label for="color-slider-alpha">Alpha</label>
+            <input type="range" id="color-slider-alpha" min="0" max="1" step=".01" list="alpha-ticks">
+        </div>
+
+        <div>
+            <label for="color-slider-result"></label>
+            <textarea id="color-slider-result" class="color-slider__result">Your generated color shows up in this textarea as a background.</textarea>
+        </div>
+    </section>
+
+</body>
+</html>
