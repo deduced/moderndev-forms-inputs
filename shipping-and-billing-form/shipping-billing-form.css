@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+    box-sizing: border-box;
+}
+
+
+form {
+    padding: 1em;
+    margin: 0 auto;
+    width: 450px;
+    height: 530px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    border: solid 1px #cbc9c9;
+    font-family: 'Lato', sans-serif;
+}
+
+label {
+    display: block;
+    width: 90px;
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+input {
+    font: 1em sans-serif;
+    width: 380px;
+    color: rgba(135, 135, 135, 0.7);
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    width: auto;
+}
+
+.shipping-billing-form__check-box {
+    display: inline-block;
+    width: 300px;
+    margin-left: 5px;
+}
+
+select {
+    font-size: 1em;
+}
+
+fieldset {
+    font-size: 1.1em;
+}
+
+#billing-name {
+    margin-bottom: 1.4em;
+}
+
+
+#last-name {
+    margin-bottom: 1em;
+}
+
+#state {
+    margin-bottom: 1em;
+}
+
+#shipping-box {
+    text-align: center;
+}
