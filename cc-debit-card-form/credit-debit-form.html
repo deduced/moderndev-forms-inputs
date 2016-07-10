@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card | Debit Card Form</title>
+    <link rel="stylesheet" href="credit-debit-form.css">
+    <script src="https://use.fontawesome.com/a0993efd9c.js"></script>
+</head>
+
+<body>
+    <div class="payment-container">
+        <div class="payment-form__header"><h2>Secure Payment Details</h2></div>
+        <hr>
+        <div class="cc-logos">
+            <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
+        </div>
+            <form>
+
+                <div class="payment_form__item">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" class="payment_form__input" id="card-name">
+                </div>
+
+                <div class="payment-form__container">
+                    <label for="card-number">Card Number</label>
+                    <input type="number" class="payment_form__input" id="card-number">
+                </div>
+
+
+                <div class="payment_form__item" id="card-expiration__month">
+                    <label for="card-expiration-month">Month</label>
+                    <select name="card-expiration-month" id="card-expiration-month">
+                        <option value="">MM</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="payment_form__item" id="card-expiration__year">
+                    <label for="card-expiration-year">Year</label>
+                    <select name="card-expiration-year" id="card-expiration-year">
+                        <option value="">YY</option>
+                        <option value="2016">16</option>
+                        <option value="2017">17</option>
+                        <option value="2018">18</option>
+                        <option value="2019">19</option>
+                    </select>
+                </div>
+
+
+                <div class="payment_form__item" id="cvc-container">
+                    <label for="security-code">Security Code</label>
+                    <input type="password" class="payment_form__input" id="security-code">
+                    <span class="tooltip tooltip-top" data-tooltip="3-digit code on back of visa/mc or 4-digit code on front of amex">
+                        <i id="cvc" class="fa fa-question-circle"></i>
+                    </span>
+                </div>
+
+            </form>
+        <button class="button">Pay Now</button>
+
+    </div>
+</body>
+</html>

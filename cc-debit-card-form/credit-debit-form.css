@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);
+
+* {
+    box-sizing: border-box;
+}
+
+.payment-container {
+    margin: 0 auto;
+    width: 450px;
+    background: lightgray;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(20, 20, 20, 0.7);
+    font-family: 'Source Serif Pro', serif;
+}
+
+form {
+    padding: 1em;
+}
+
+.payment-form__header {
+    text-align: center;
+}
+
+.cc-logos {
+    text-align: center;
+}
+
+.payment_form__item {
+    position: relative;
+}
+
+label, input {
+    display: block;
+    font-size: 1.2em;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+select {
+    font-size: 1.2em;
+}
+
+#card-expiration__month, #card-expiration__year  {
+    position: relative;
+    width: 70px;
+    float: left;
+}
+
+#cvc-container {
+    position: relative;
+    float: left;
+    width: 35%;
+}
+
+#cvc-container input {
+    display: inline-block;
+}
+
+
+#security-code {
+    width: 50px;
+}
+
+.fa-question-circle {
+    display: inline;
+}
+
+
+.tooltip {
+    text-decoration: none;
+}
+.tooltip:hover {
+    color: red;
+    position: relative;
+}
+/* Tooltip on Top. Inspired by https://webdesignerhut.com/pure-css-tooltips-with-html5-data-attribute/ */
+.tooltip-top[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    padding: 4px 8px;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    white-space: nowrap;
+    background-color: #000;
+    color: #fff;
+}
+
+.button {
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 14px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #fff;
+    box-shadow: 1px 2px 2px lightgray;
+    border-radius: 5px;
+    background-color: #30d0ea;
+}
+
+.button:hover {
+    background: #34e5ff;
+}
+
+.button:active {
+    top: 2px;
+}
