@@ -26,13 +26,13 @@ For this project, you will create distinct forms that include inputs and a “su
 
 4. A [login form](login-form/login-form.html) of your own creation containing at least 3 distinct input types. Look around the web for inspiration.
 
-5. A color building form composed of:
+5. A [color building form](color-building-form/color-building-form.html) composed of:
 
 	- Three slider inputs representing red, green, and blue. Use input properties to set a min value of 0, max value of 255, and step of 5.
 	- One slider input representing alpha. Use input properties to set a min of 0, max of 1, and step of 0.01.
 	- A text area where the color will be generated (functionality will be added in the future)
 
-6. A Shipping and Billing Address Form for retrieving a customer’s shipping and billing information. Use one form element for both collections. It should have two sections, one with labels and inputs for shipping information, and one with labels and inputs for billing information. Both sections should have the following labels and inputs:
+6. A [Shipping and Billing Address Form](shipping-and-billing-form/shipping-billing-form.html) for retrieving a customer’s shipping and billing information. Use one form element for both collections. It should have two sections, one with labels and inputs for shipping information, and one with labels and inputs for billing information. Both sections should have the following labels and inputs:
 	
 	- First name
 	- Last name
@@ -42,7 +42,7 @@ For this project, you will create distinct forms that include inputs and a “su
 
 	Also, include a label and checkbox element indicating that shipping should match the billing form’s input data.1
 
-7. A Scheduling Form usable for scheduling appointments. Include labels and inputs for a(n):
+7. A [Scheduling Form](scheduling-form/scheduling-form.html) usable for scheduling appointments. Include labels and inputs for a(n):
 
 	- Date input
 	- Time input
@@ -51,7 +51,7 @@ For this project, you will create distinct forms that include inputs and a “su
 	- Contact number
 	- Email address
 
-8. A Credit / Debit Card Form usable to collect a customer’s billing information when making purchases. It should include labels and inputs for
+8. A [Credit / Debit Card Form](cc-debit-card-form/credit-debit-form.html) usable to collect a customer’s billing information when making purchases. It should include labels and inputs for
 
 	- The cardholder’s full name.
 	- The 16-digit card number. Set the maximum character count of the input to 19: 16 characters for the card number, and 3 for the typical hyphens.
