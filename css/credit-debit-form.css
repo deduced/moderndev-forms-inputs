@@ -18,6 +18,7 @@ form {
     padding: 1em;
 }
 
+
 .payment-form__header {
     text-align: center;
 }
@@ -79,6 +80,7 @@ select {
 }
 /* Tooltip on Top. Inspired by https://webdesignerhut.com/pure-css-tooltips-with-html5-data-attribute/ */
 .tooltip-top[data-tooltip]:hover:after {
+
     content: attr(data-tooltip);
     padding: 4px 8px;
     position: absolute;
@@ -110,3 +112,27 @@ select {
 .button:active {
     top: 2px;
 }
+
+input:invalid {
+  border: 3px solid red;
+}
+
+input:valid {
+  border: 3px solid green;
+}
+
+/*
+
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+  padding: 0.3em;
+}*/

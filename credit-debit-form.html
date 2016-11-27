@@ -17,22 +17,24 @@
             <i class="fa fa-cc-amex fa-2x" aria-hidden="true"></i>
             <i class="fa fa-cc-discover fa-2x" aria-hidden="true"></i>
         </div>
-            <form>
+            <form id="payment-form">
 
                 <div class="payment_form__item">
                     <label for="card-name">Name on Card</label>
-                    <input type="text" class="payment_form__input" id="card-name">
+                    <input type="text" class="payment_form__input" id="card-name" title="Provide your first and last name" required>
+                    <!-- <span id="name-error" aria-live="polite"></span> -->
                 </div>
 
                 <div class="payment-form__container">
                     <label for="card-number">Card Number</label>
-                    <input type="text" class="payment_form__input" id="card-number" maxlength="19">
+                    <input type="text" class="payment_form__input" id="card-number" maxlength="19" required>
+                    <!-- <span id="cc-error" aria-live="polite"></span> -->
                 </div>
 
 
                 <div class="payment_form__item" id="card-expiration__month">
                     <label for="card-expiration-month">Month</label>
-                    <select name="card-expiration-month" id="card-expiration-month">
+                    <select name="card-expiration-month" id="card-expiration-month" required>
                         <option value="">MM</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -51,7 +53,7 @@
 
                 <div class="payment_form__item" id="card-expiration__year">
                     <label for="card-expiration-year">Year</label>
-                    <select name="card-expiration-year" id="card-expiration-year">
+                    <select name="card-expiration-year" id="card-expiration-year" required>
                         <option value="">YY</option>
                         <option value="2016">16</option>
                         <option value="2017">17</option>
@@ -75,15 +77,17 @@
 
                 <div class="payment_form__item" id="cvc-container">
                     <label for="security-code">Security Code</label>
-                    <input type="password" class="payment_form__input" id="security-code" maxlength="4">
+                    <input type="password" class="payment_form__input" id="security-code" minlength = "3" maxlength="4" required>
                     <span class="tooltip tooltip-top" data-tooltip="3-digit code on back of visa/mc or 4-digit code on front of amex">
                         <i id="cvc" class="fa fa-question-circle"></i>
                     </span>
                 </div>
-
+                <input type="submit" class="button" value="Pay Now"></button>
             </form>
-        <button class="button">Pay Now</button>
+
 
     </div>
+    <script type="text/javascript" src = "js/validator.js"></script>
+    <script type="text/javascript" src = "js/credit-debit-form.js"></script>
 </body>
 </html>
