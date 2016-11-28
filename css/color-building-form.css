@@ -9,10 +9,15 @@
     box-sizing: border-box;
 }
 
+label {
+  display: inline-block;
+  width: 50px;
+}
+
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px;
-    width: 100%;
+    width: 800px;
 }
 
 input[type=range]:focus {
@@ -35,7 +40,7 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
-    width: 100%;
+    width: 800px;
     height: 8px;
     border-radius: 5px;
     border: 1px solid #010101;
@@ -48,12 +53,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 textarea {
-    width: 100%;
+    width: 800px;
     height: 30px;
     border: 3px solid #cccccc;
     border-radius: 5px;
     padding: 5px;
     margin-top: 30px;
+    margin-left: 20px;
     font-family: 'Lato', sans-serif;
     font-size: .9em;
 }
