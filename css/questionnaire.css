@@ -47,10 +47,10 @@
     position:relative;
     padding: 5px 10px 6px;
     border-radius: 5px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(8, 47, 217);
     line-height: 1em;
     font-size: 1.2em;
-    color: rgba(57, 48, 50, 0.9);
+    color: rgba(203, 202, 202, 0.9);
     box-shadow: 0 1px 3px rgba(57, 48, 50, 0.5);
     border-bottom: 1px solid rgba(0,0,0,0.25);
     cursor: pointer;
@@ -60,9 +60,17 @@
 }
 
 .button:hover {
-    background-color: rgba(242, 242, 242, 0.9);
+    background-color: rgba(69, 135, 233, 0.9);
 }
 
 .button:active {
     top: 1px;
+}
+
+input:valid:focus {
+  background-color: green;
+}
+
+input:invalid {
+  background-color: red;
 }
