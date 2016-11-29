@@ -84,3 +84,15 @@ a {
     color: #f2f2f2;
     cursor: pointer;
 }
+
+.fa {
+  padding-top: 8px;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 2px solid red; 
+}
