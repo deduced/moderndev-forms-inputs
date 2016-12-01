@@ -73,7 +73,7 @@
 
     }
 
-    function isPhoneNumber( input ){
+    function isPhoneNumber(input) {
         /**
          * Checks if a US or Canadian phone number is valid.
          * Assumes exact format: "xxx-xxx-xxxx".
@@ -81,44 +81,35 @@
          * @return {boolean}
          */
 
-        try {
-            // check for empty or undefined parameter
-            if (!input) {
-                throw "Function 'isPhoneNumber' missing parameter: 'input'.";
-            }
-
-            if (typeof input !== "string") {
-                throw "Input must be of the type: 'string'.";
-            }
-
-            // get phone number parts
-            var phoneParts = input.split('-');
-
-            // check the parts
-            if (phoneParts.length !== 3) {
-                throw "Your phone number has an invalid format. It should be formatted like so: xxx-xxx-xxxx";
-            } else {
-                var areaCode = phoneParts[0];
-                var exchange = phoneParts[1];
-                var lineNumber = phoneParts[2];
-
-                if (areaCode.length !== 3 || exchange.length !== 3 || lineNumber.length !== 4) {
-                    throw "Your number has too many or too few digits. Correct format is: xxx-xxx-xxxx.";
-                }
-
-                if (isNaN(Number(areaCode)) || isNaN(Number(exchange)) || isNaN(Number(lineNumber))) {
-                    throw "Your number contains non-digit characters.";
-                }
-            }
-
+        if (!input) {
+            throw "Function 'isPhoneNumber' missing parameter: 'input'.";
         }
-        catch (error) {
-            console.log("Error: " + error);
+
+        if (typeof input !== "string") {
+            throw "Input must be of the type: 'string'.";
+        }
+
+        // get phone number parts
+        var phoneParts = input.split('-');
+
+        // check the parts
+        if (phoneParts.length !== 3) {
             return false;
+        } else {
+            var areaCode = phoneParts[0];
+            var exchange = phoneParts[1];
+            var lineNumber = phoneParts[2];
+
+            if (areaCode.length !== 3 || exchange.length !== 3 || lineNumber.length !== 4) {
+                return false;
+            }
+
+            if (isNaN(Number(areaCode)) || isNaN(Number(exchange)) || isNaN(Number(lineNumber))) {
+                return false;
+            }
         }
-
+        
         return true;
-
     }
 
     function withoutSymbols( input ){
