@@ -9,68 +9,57 @@
          * @return {boolean}
          */
 
-        try {
-            // check for empty or undefined parameter
-            if (!input) {
-                throw "Function 'isEmailAddress' missing parameter: 'input'.";
-            }
+         if (!input) {
+             throw "Function 'isEmailAddress' missing parameter: 'input'.";
+         }
 
-            if (typeof input != "string") {
-                throw "Input must be of the type: 'string'.";
-            }
+         if (typeof input != "string") {
+             throw "Input must be of the type: 'string'.";
+         }
 
-            if (input.indexOf('@') === -1) {
-                throw "You must have at least one '@' sign.";
-            }
+         if (input.indexOf('@') === -1) {
+             return false;
+         }
 
-            // set validation rules
-            var permittedChars = "abcdefghijklmnopqrstuvwxyz.0123456789!#$%&'*+-/=?^_`{|}~";
-            var localPartMinChars = 1;
-            var domainPartMinChars = 3;
+         // set validation rules
+         var permittedChars = "abcdefghijklmnopqrstuvwxyz.0123456789!#$%&'*+-/=?^_`{|}~";
+         var localPartMinChars = 1;
+         var domainPartMinChars = 3;
 
+         // Get email parts
+         var parts = input.split('@');
+         var localPart = parts[0];
+         var domainPart = parts[1];
 
-            // Get email parts
-            var parts = input.split('@');
-            var localPart = parts[0];
-            var domainPart = parts[1];
+         // Test parts length
+         if (parts.length !== 2) {
+             return false;
+         }
 
-            // Test parts length
-            if (parts.length !== 2) {
-                throw "Only one '@' sign is permitted.";
-            }
+         // test that domain does not start with a .
+         if (domainPart.indexOf('.') <= 0) {
+             return false;
+         }
 
-            // test that domain does not start with a .
-            if (domainPart.indexOf('.') <= 0) {
-                throw "Domain-part must have at least one '.' and it cannot be the first character after '@'";
-            }
+         // Test min characters
+         if (localPart.length < localPartMinChars || domainPart.length < domainPartMinChars) {
+             return false;
+         }
 
-            // Test min characters
-            if (localPart.length < localPartMinChars || domainPart.length < domainPartMinChars) {
-                throw "Too few characters before or after the '@' symbol.";
-            }
+         // test valid characters in localPart
+         for (var i = 0; i < localPart.length; i++) {
+             if (permittedChars.indexOf(localPart[i]) == -1) {
+                 return false;
+             }
+         }
 
-            // test valid characters in localPart
-            for (var i = 0; i < localPart.length; i++) {
-                if (permittedChars.indexOf(localPart[i]) == -1) {
-                    throw "Invalid characters in the local-part.";
-                }
-            }
-
-            // test valid character in domain
-            for (var i = 0; i < domainPart.length; i++) {
-                if (permittedChars.indexOf(domainPart[i]) == -1) {
-                    throw "Invalid characters in the domain-part.";
-                }
-            }
-
-        }
-        catch (error) {
-            console.log("Error: " + error);
-            return false;
-        }
-
+         // test valid character in domain
+         for (var i = 0; i < domainPart.length; i++) {
+             if (permittedChars.indexOf(domainPart[i]) == -1) {
+                 return false;
+             }
+         }
         return true;
-
     }
 
     function isPhoneNumber(input) {
@@ -108,7 +97,7 @@
                 return false;
             }
         }
-        
+
         return true;
     }
 
