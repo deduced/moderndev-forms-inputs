@@ -1,3 +1,5 @@
+//@TODO -- should I be using 'this'?? Functions give errors on console but things seem to work as events. 
+
 // grab the elements we need to create our listeners
 var creditCardForm = document.getElementById('payment-form');
 var nameField = creditCardForm.querySelector('#card-name');
