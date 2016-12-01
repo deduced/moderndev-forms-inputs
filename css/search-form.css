@@ -51,7 +51,7 @@
 
 
 
-.search-form button {
+.search-form .button {
     background: #222;
     cursor: pointer;
     background: linear-gradient(#333, #222);
@@ -74,17 +74,15 @@
     width: 80px;
 }
 
-.search-form button:hover,
-.search-form button:focus {
+.search-form .button:hover,
+.search-form .button:focus {
     background: #292929;
     background: linear-gradient(#393939, #292929);
     color: #01f3ff;
     outline: none;
 }
 
-.search-form button:active {
+.search-form .button:active {
     background: #292929;
     top: 1px;
 }
-
-
