@@ -64,3 +64,13 @@ textarea {
     font-weight: 400;
     padding: .8em;
 }
+
+input:valid:focus,
+textarea:valid:focus {
+  background-color: green;
+}
+
+input:invalid,
+textarea:invalid {
+  background-color: red;
+}
