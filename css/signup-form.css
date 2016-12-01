@@ -48,11 +48,19 @@ label {
 input {
     font: 1em sans-serif;
     width: 300px;
-    color: rgba(135, 135, 135, 0.7)
+    color: rgba(62, 61, 61, 0.78)
 
 
 }
 
 input:focus {
     background-color: #eee7bf;
+}
+
+input:valid:focus {
+  background-color: green;
+}
+
+input:invalid {
+  background-color: red;
 }
