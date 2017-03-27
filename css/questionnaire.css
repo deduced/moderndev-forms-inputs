@@ -17,8 +17,7 @@
     margin: 0 auto;
     margin-top: 30px;
     padding: 1em 2em;
-    width: 440px;
-    height: 370px;
+    max-width: 371px;
     border: 1px solid #393032;
     border-radius: 8px;
     background: linear-gradient(#878787, #cccccc);
@@ -73,4 +72,38 @@ input:valid:focus {
 
 input:invalid {
   background-color: red;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .questionnaire form {
+    max-width: 471px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .questionnaire form {
+    max-width: 700px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  #questionnaire  {
+    font-size: 1.3em;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  #questionnaire  {
+    font-size: 1.5em;
+  }
 }
