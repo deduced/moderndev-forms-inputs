@@ -22,7 +22,7 @@ body {
 
 .login-input {
     font-weight: 800;
-    width: 300px;
+    width: 80%;
     padding-left: 30px;
     color: #cccccc;
     border-style: none;
@@ -95,4 +95,32 @@ input:valid:focus {
 
 input:invalid {
   border: 2px solid red;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .login-form-wrapper {
+    width: 485px;
+  }
+
+  .button {
+    width: 90%;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .login-form-wrapper {
+    width: 685px;
+  }
+
+  .button {
+    width: 87%;
+  }
 }
