@@ -17,7 +17,7 @@ label {
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px;
-    width: 800px;
+    width: 90%;
 }
 
 input[type=range]:focus {
@@ -53,7 +53,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 textarea {
-    width: 800px;
+    width: 90%;
     height: 30px;
     border: 3px solid #cccccc;
     border-radius: 5px;
