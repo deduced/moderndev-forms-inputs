@@ -1,4 +1,4 @@
-#Demos of Forms and Inputs 
+# Demos of Forms and Inputs 
 
 1  . A [Signup Form](signup-form.html) containing a label and input for:
 
